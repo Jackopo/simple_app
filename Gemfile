@@ -23,17 +23,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-<<<<<<< HEAD
-=======
-## Adding devise for authentication
-gem 'devise'
-
 gem 'haml'
 gem 'haml-rails'
-
->>>>>>> 8373987... added haml and specified ruby version
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
