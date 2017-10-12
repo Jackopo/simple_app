@@ -1,0 +1,12 @@
+%h1 Upload an Image
+
+= form_for :image, url: '/upload' do |f|
+  %p
+    = label(:image, :title)
+    = f.text_field :title
+
+  %p
+    = label(:image, :blob)
+    = f.file_field :blob
+
+  = f.submit 'Upload'

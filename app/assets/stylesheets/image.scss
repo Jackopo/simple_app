@@ -1,0 +1,45 @@
+// Place all the styles related to the Image controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.images {
+  text-align: center;
+
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+  .image-container {
+    width: 100%;
+
+    h4 {
+      margin: 16px 0;
+      line-height: 16px;
+    }
+
+    img {
+      max-width: 100px;
+      max-height: 100px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
+  .images {
+    text-align: left;
+
+    .image-container {
+      float: left;
+      width: 33%;
+      height: 148px;
+
+    }
+  }
+}
