@@ -1,0 +1,20 @@
+%h1
+  Signup
+= form_for :user, url: '/signup' do |f|
+  %p
+    = label(:user, :name)
+    = f.text_field :name
+
+  %p
+    = label(:user, :email)
+    = f.text_field :email
+
+  %p
+    = label(:user, :password)
+    = f.password_field :password
+
+  %p
+    = label(:user, :pasword_confirmation)
+    = f.password_field :password_confirmation
+
+  = f.submit "Sign up"
