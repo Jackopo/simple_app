@@ -29,4 +29,11 @@ describe "routing" do
       action: "create"
     )
   end
+
+  it "should routes get /logout to sessions#destroy" do
+    expect(get "/logout").to route_to(
+      controller: "sessions",
+      action: "destroy"
+    )
+  end
 end
