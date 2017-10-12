@@ -36,4 +36,18 @@ describe "routing" do
       action: "destroy"
     )
   end
+
+  it "should routes get /image to image#new" do
+    expect(get "/image").to route_to(
+      controller: "image",
+      action: "new"
+    )
+  end
+
+  it "should routes post /upload to image#create" do
+    expect(post "/upload").to route_to(
+      controller: "image",
+      action: "create"
+    )
+  end
 end
