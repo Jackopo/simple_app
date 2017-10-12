@@ -11,7 +11,6 @@ class UsersController < ApplicationController
     if user.save
       redirect_to '/'
     else
-      byebug
       redirect_to '/signup'
     end
   end
