@@ -3,6 +3,9 @@
   - if current_user
     %h2
       Hello #{current_user.name}
+    .link-to-uploads
+      = link_to "Upload an image", '/image'
+
     - if current_user.images.present?
       = render partial: 'image_list'
     .logout
